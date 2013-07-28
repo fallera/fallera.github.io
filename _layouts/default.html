@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+	<head>
+	<meta charset="utf-8" />
+	<title>{{ page.title }}</title>
+
+	{% if site.env == 'production' %}
+    <link rel="stylesheet" href="{{ site.baseurl}}/css/styles.min.css" type="text/css" media="screen, projection">
+  {% else %}
+    <link rel="stylesheet" href="{{ site.baseurl}}/css/styles.css" type="text/css" media="screen, projection">
+  {% endif %}
+
+</head>
+<body>
+	<div class="container">
+	{% include site_header.html %}
+	<div class="main">
+		{{ content }}
+	</div>
+	{% include site_footer.html %}
+	</div>
+</body>
+</html>

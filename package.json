@@ -1,0 +1,20 @@
+{
+  "name": "fallera.github.io",
+  "description": "Homepage",
+  "author": {
+    "name": "isavar",
+    "email": "fraufallera@gmail.com"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-less": "~0.6.1",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-jekyll": "~0.3.8"
+  },
+  "peerDependencies": {
+    "grunt": "0.4"
+  }
+}

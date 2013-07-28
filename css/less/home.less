@@ -1,0 +1,52 @@
+.recentposts {
+	font-size: 0;
+	li {
+		display: inline-block;
+		position: relative;
+		width: 32.9%;
+		height: 185px;
+		background: #fff;
+		background: linear-gradient(225deg, transparent 15px, #fff 0);
+		background-repeat: no-repeat;
+		background-size: 100% 101%;  
+		padding: 8px;
+		margin: 0 3px 3px 0;
+		border: 8px solid #fff;
+		border-width: 0 0 8px 0;
+		font-size: @base-font-size;
+		vertical-align: top;
+		overflow: hidden;
+		#hlp-box > .border();
+		#hlp-transition >  .short();
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+		&:after {
+			content: "...";
+			position: absolute;
+			bottom: 2px;
+			right: 8px;
+			font-size: 22px;
+			line-height: 1;
+			padding: 0 0 0 30px;
+			background: #fff;
+			#hlp-gradient > .linear-generic(~"to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 25px,rgba(255,255,255,1) 100%");
+			pointer-events: none;
+		}
+		&:hover {
+			background-position: 0 -50%;  
+		}
+	}
+	p {
+		margin: 0 0 1.1em 0;
+	}
+	.date {
+		font-size: 0.8em;
+		text-align: left;
+	}
+	.title {
+		font-size: 1.2em;
+		line-height: 1.23;
+	}
+}
