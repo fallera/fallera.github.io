@@ -1,3 +1,4 @@
+-baseurl: /fallera.github.io
 exclude: [
   'node_modules',
   'Gruntfile.js',
